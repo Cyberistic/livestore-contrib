@@ -16,6 +16,21 @@ Core LiveStore packages are consumed from the pinned `livestore` megarepo member
 under `repos/livestore`; they remain owned by
 [`livestorejs/livestore`](https://github.com/livestorejs/livestore).
 
+### Effect-line split
+
+The contrib `@livestore/*` packages are pegged to the **`effect@^3.21.2`**
+peer surface, matching the pinned core megarepo. Apps that want the
+**Effect 4** line can install the sibling adapter packages, which are
+pinned to the matching LiveStore snapshot:
+
+| Effect | Adapter | Snapshot pin |
+|--------|---------|---------------|
+| 3.x    | [`@livestore/adapter-expo`](./packages/@livestore/adapter-expo)        | `repos/livestore` (megarepo) |
+| 4.x    | [`@livestore/adapter-expo-effect-v4`](./packages/@livestore/adapter-expo-effect-v4) | `npm:@livestore/*@0.0.0-snapshot-31d1eb100c8a16a303c32fa181565de9e8d6fe3f` |
+
+See each adapter's README for the exact install line and the peer
+floors required.
+
 ## Development
 
 Use the pinned toolchain:

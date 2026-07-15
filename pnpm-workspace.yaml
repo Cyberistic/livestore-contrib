@@ -16,6 +16,7 @@ packages:
   - examples/web-todomvc-sync-electric
   - examples/web-todomvc-sync-s2
   - packages/@livestore/adapter-expo
+  - packages/@livestore/adapter-expo-effect-v4
   - packages/@livestore/adapter-node
   - packages/@livestore/cli
   - packages/@livestore/devtools-expo

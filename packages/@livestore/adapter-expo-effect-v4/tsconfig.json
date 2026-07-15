@@ -1,0 +1,41 @@
+// Generated file - DO NOT EDIT
+// Source: tsconfig.json.genie.ts
+//
+// Effect-4 sibling of @livestore/adapter-expo. The `references` block
+// in the upstream tsconfig points at `repos/livestore/packages/...`
+// (the megarepo materialisation); we instead resolve the snapshot
+// packages via `node_modules/@livestore/{common,utils,webmesh}`
+// (npm-installed at the snapshot version pinned in package.json).
+{
+  "compilerOptions": {
+    "target": "ES2024",
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowJs": false,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "composite": true,
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./dist/.tsbuildinfo",
+    "types": ["node"]
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules", "**/dist", "**/node_modules/.pnpm", "**/*.genie.ts"]
+}
